@@ -44,6 +44,17 @@ exports.onClientEntry = (a, pluginOptions = { color: `#29d` }) => {
 //   window.___emitter.on(`onPostLoadPageResources`, () => {
 //     NProgress.done()
 //   })
+const pluginOptionsConf = {
+    showSpinner: true,
+    trickleSpeed: 2000,
+    easing: 'ease', speed: 1000,
+    template: "<div class=''><h2>Loading</h2></div>" 
+ }
+NProgress.configure(pluginOptions)
+            NProgress.start();
+    for (let index = 0; index < 50000*50000; index++) {
+        // i=0;
+    }
 
   
     console.log(pluginOptions);
