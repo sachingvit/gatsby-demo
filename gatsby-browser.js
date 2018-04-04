@@ -50,31 +50,31 @@ const pluginOptionsConf = {
     easing: 'ease', speed: 1000,
     template: "<div class=''><h2>Loading</h2></div>" 
  }
-NProgress.configure(pluginOptions)
-            NProgress.start();
-    for (let index = 0; index < 50000*50000; index++) {
+// NProgress.configure(pluginOptions)
+            // NProgress.start();
+    // for (let index = 0; index < 50000*50000; index++) {
         // i=0;
-    }
+    // }
 
   
-    console.log(pluginOptions);
+    // console.log(pluginOptions);
     // NProgress.start();
-    let count= 0;
+    // let count= 0;
     
-    let intvl= null;
-    intvl= setInterval(()=>{
-        if(count == 0){
-            NProgress.configure(pluginOptions)
-            NProgress.start();
-        }
-        if(count<10){
-            NProgress.inc();
-            count++;
-        }else if(count == 10){
-            NProgress.done(); 
-            // clearInterval(intvl);
-        }
-    },500);
+    // let intvl= null;
+    // intvl= setInterval(()=>{
+    //     if(count == 0){
+    //         NProgress.configure(pluginOptions)
+    //         NProgress.start();
+    //     }
+    //     if(count<10){
+    //         NProgress.inc();
+    //         count++;
+    //     }else if(count == 10){
+    //         NProgress.done(); 
+    //         // clearInterval(intvl);
+    //     }
+    // },500);
 
   // Inject styles.
   const styles = `#nprogress {
